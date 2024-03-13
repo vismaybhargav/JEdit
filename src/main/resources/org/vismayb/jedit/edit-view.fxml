@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import org.fxmisc.richtext.CodeArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TreeView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.vismayb.jedit.JEditController">
+  <top>
+    <MenuBar>
+      <Menu text="File">
+        <Menu text="New">
+          <MenuItem text="Project"/>
+          <MenuItem text="File"/>
+        </Menu>
+        <MenuItem text="Open Project"/>
+        <MenuItem text="Open File"/>
+        <MenuItem text="Save as"/>
+        <MenuItem text="Save"/>
+      </Menu>
+    </MenuBar>
+  </top>
+
+  <left>
+    <HBox>
+      <VBox></VBox>
+      <TreeView></TreeView>
+    </HBox>
+  </left>
+  <center>
+    <CodeArea></CodeArea>
+  </center>
+</BorderPane>
