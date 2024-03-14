@@ -10,7 +10,7 @@ import java.io.IOException;
 public class JEditApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(JEditApplication.class.getResource("edit-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(JEditApplication.class.getResource("fxml-views/edit-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setTitle("JEdit");
         stage.setScene(scene);
