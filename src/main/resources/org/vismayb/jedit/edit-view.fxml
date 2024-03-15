@@ -12,19 +12,25 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.Label?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.vismayb.jedit.JEditController"
-            stylesheets="stylesheets/edit-styles.css">
+            fx:controller="org.vismayb.jedit.JEditController">
+  <stylesheets>stylesheets/edit-styles.css</stylesheets>
+
   <top>
     <MenuBar>
       <Menu text="File">
         <Menu text="New">
-          <MenuItem text="Project"/>
-          <MenuItem text="File"/>
+          <MenuItem fx:id="newProjectItem" text="Project"/>
+          <MenuItem fx:id="newFileItem" text="File"/>
         </Menu>
-        <MenuItem text="Open Project"/>
-        <MenuItem text="Open File"/>
-        <MenuItem text="Save as"/>
-        <MenuItem text="Save"/>
+        <Menu text="Open">
+          <MenuItem fx:id="openProjectItem" text="Project"/>
+          <MenuItem fx:id="openFileItem" text="File"/>
+        </Menu>
+        <MenuItem fx:id="saveAsItem" text="Save as"/>
+        <MenuItem fx:id="saveItem" text="Save"/>
+      </Menu>
+      <Menu text="Help">
+        <MenuItem fx:id="creditsItem" text="Credits"></MenuItem>
       </Menu>
     </MenuBar>
   </top>
